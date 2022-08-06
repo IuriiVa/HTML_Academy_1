@@ -167,17 +167,21 @@ main {
 }
 .ourwork {
     padding-top: 65px;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 65px;
     background: #E5E5E5;
 }
 .ourwork>h2 {
     text-align: left;
+    margin-left: 100px;
 }
 .ourwork-img {
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .look {
     display: flex;
@@ -287,6 +291,106 @@ main {
     padding-bottom: 65px;
     background: #E5E5E5;
 }
+.feedback-main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.feedback-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 407px;
+    color: #533738;
+}
+.feedback-img {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.feedback-arrow {
+    display: block;
+    background: #CC8B86;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.arrow-2 {
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-2 div {
+    position: relative;
+    top: 36px;
+    width: 32px;
+    height: 2px;
+    background-color: #F5F2ED;
+    left: 20px;
+    display: block;
+}
+.arrow-2 div::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: 24px;
+    background-color: #F5F2ED;
+    transform: rotate(-45deg);
+}
+.arrow-2 div::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: 24px;
+    background-color: #F5F2ED;
+    transform: rotate(45deg);
+}
+.arrow-3 {
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-3 div {
+    position: relative;
+    top: 36px;
+    width: 32px;
+    height: 2px;
+    background-color: #F5F2ED;
+    left: 20px;
+    display: block;
+}
+.arrow-3 div::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background-color: #F5F2ED;
+    transform: rotate(45deg);
+}
+.arrow-3 div::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background-color: #F5F2ED;
+    transform: rotate(-45deg);
+}
 .order {
     padding-left: 182px;
     padding-right: 100px;
@@ -320,6 +424,14 @@ main {
     height: 60px;
     border: none;
     border-bottom: 2px solid #F6EDE9;
+}
+.name-input:focus {
+    outline: none !important;
+    border-color: 2px solid #F6EDE9;
+}
+.tel-input:focus {
+    outline: none !important;
+    border-color: 2px solid #F6EDE9;
 }
 .tel-input {
     margin-top: 40px;
