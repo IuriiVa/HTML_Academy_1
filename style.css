@@ -469,3 +469,40 @@ main {
     color: #533738;
     margin-right: 42px;
 }
+.holder{
+    position: relative;
+    width: 488px;
+    height: 451px;
+}
+.ourwork-block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(100,72,69, 0.8);
+    display: block;
+}
+/*
+.holder:hover .ourwork-block {
+    display:block;
+}
+*/
+.ourwork-title {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 86px;
+    padding-left: 109px;
+    padding-right: 109px;
+}
+.ourwork-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 35px;
+}
